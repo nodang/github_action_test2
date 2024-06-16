@@ -23,6 +23,7 @@ jobs:
 
     - name: run
       run: ..\Compiler\bin\make.exe clear
+      working-directory: .\main
 
     - name: run powershell and build
       run: powershell .\build_Bat.bat
