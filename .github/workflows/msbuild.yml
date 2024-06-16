@@ -19,16 +19,16 @@ jobs:
     - uses: actions/checkout@v4
     
     - name: permission
-      run: chmod -R +x .\main .\include .\Compiler
+      run: chmod -R +x ./main ./include ./Compiler
       shell: bash
 
     - name: run
-      run: ..\Compiler\bin\make.exe
+      run: ../Compiler/bin/make.exe
       shell: bash
-      working-directory: .\main
+      working-directory: ./main
 
     - name: build
-      run: .\build_Bat.bat
+      run: ./build_Bat.bat
       shell: bash
-      working-directory: .\main
-      #run: powershell.exe -Command " .\build_Bat.bat"
+      working-directory: ./main
+      #run: powershell.exe -Command " ./build_Bat.bat"
