@@ -1,4 +1,4 @@
-set PATH_BAT=..\Compiler
+set PATH_BAT=D:\a\github_action_test2\github_action_test2\Compiler
 set TARGET_BAT=a_hara
 
 cls
