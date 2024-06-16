@@ -33,5 +33,6 @@ jobs:
     - name: build
       shell: powershell
       run: |
-        ./main/build_Bat.bat
+        cd main
+        .\build_Bat.bat
           
