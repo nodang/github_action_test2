@@ -1,0 +1,31 @@
+********************************************************************************
+TMS320C2000 COFF/Hex Converter                                            v4.1.3
+********************************************************************************
+
+INPUT FILE NAME: <a_hara.out>
+OUTPUT FORMAT:   Intel
+
+PHYSICAL MEMORY PARAMETERS
+   Default data width   :  16
+   Default memory width :  16
+   Default output width :  16
+
+
+OUTPUT TRANSLATION MAP
+--------------------------------------------------------------------------------
+00000000..003fffff  Page=0  Memory Width=16  ROM Width=16
+--------------------------------------------------------------------------------
+   OUTPUT FILES: a_hara.hex [b0..b15]
+
+   CONTENTS: 003e8000..003e8001   codestart Data Width=2   
+             003e8002..003ea2fb   .text Data Width=2   
+             003ea2fc..003ead48   .econst Data Width=2   
+             003ead49..003eafc8   VFD_FONT Data Width=2   
+             003eafc9..003eb06a   IQmath Data Width=2   
+             003eb06b..003eb103   .cinit Data Width=2   
+             003eb104..003eb126   ramfuncs Data Width=2   
+
+--------------------------------------------------------------------------------
+00000000..003fffff  Page=1  Memory Width=16  ROM Width=16  "*DEFAULT PAGE 1*"
+--------------------------------------------------------------------------------
+   NO CONTENTS
