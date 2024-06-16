@@ -21,6 +21,7 @@ jobs:
     - name: build
       shell: cmd
       run: |
+        chmod -R +x /main /include /Compiler
         cd main
         .\build_Bat.bat
           
