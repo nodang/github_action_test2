@@ -70,4 +70,6 @@ all: $(TARGET).out
 
 # Target: clean project.
 clean: 
-	del *.out *.map *.obj
+	del *.out
+	del *.map
+	del *.obj
