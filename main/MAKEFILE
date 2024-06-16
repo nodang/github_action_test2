@@ -70,6 +70,6 @@ all: $(TARGET).out
 
 # Target: clean project.
 clean: 
-	rm -rf *.out
-	rm -rf *.map
-	rm -rf *.obj
+	del *.out
+	del *.map
+	del *.obj
