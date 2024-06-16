@@ -18,8 +18,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: build
-      shell: powershell -command "& '{0}'"
       run: |
+        powershell.exe
         chmod -R +x .\main .\include .\Compiler
         cd main
         .\build_Bat.bat
