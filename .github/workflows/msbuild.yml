@@ -20,7 +20,7 @@ jobs:
     - name: permission
       run: chmod -R +x .\main .\include .\Compiler
     - name: run powershell and build
-      run: powershell.exe |
+      run: powershell.exe
     - run:
         cd main
         .\build_Bat.bat
