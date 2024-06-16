@@ -1,6 +1,3 @@
-./title _666_cpu(TMS2808)_init_user_compile
-color 00
-
 set PATH_BAT=..\Compiler
 set TARGET_BAT=a_hara
 
