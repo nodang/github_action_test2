@@ -22,5 +22,7 @@ jobs:
       run: chmod -R +x .\main .\include .\Compiler
     
     - name: run powershell and build
-      run: powershell -Command { cd main | .\build_Bat.bat }
+      run: |
+        cd main
+        powershell .\build_Bat.bat
       #run: powershell.exe -Command " .\build_Bat.bat"
