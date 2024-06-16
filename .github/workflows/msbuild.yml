@@ -17,20 +17,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-
-    - name: Add msbuild to PATH
-      uses: microsoft/setup-msbuild@v2
-      with:
-        msbuild-architecture: x64
     
     - name: permission
       run: chmod -R +x .\main .\include .\Compiler
+      shell: bash
 
     - name: run
       run: ..\Compiler\bin\make.exe
+      shell: bash
       working-directory: .\main
 
-    - name: run powershell and build
-      run: powershell .\build_Bat.bat
+    - name: build
+      run: .\build_Bat.bat
+      shell: bash
       working-directory: .\main
       #run: powershell.exe -Command " .\build_Bat.bat"
