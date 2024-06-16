@@ -21,6 +21,9 @@ jobs:
     - name: permission
       run: chmod -R +x .\main .\include .\Compiler
 
+    - name: run
+      run: ../Compiler/bin/make.exe clear
+
     - name: run powershell and build
       run: powershell .\build_Bat.bat
       working-directory: .\main
