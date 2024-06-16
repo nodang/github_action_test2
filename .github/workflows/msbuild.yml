@@ -17,12 +17,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: permission and cd
-      run: |
-        chmod -R +x .\main .\include .\Compiler
-        cd main
+    - name: permission
+      run: chmod -R +x .\main .\include .\Compiler
     - name: run powershell and build
-      run: |
-        powershell.exe 
-        $.\build_Bat.bat
+      run: powershell.exe |
+    - run:
+        cd main
+        .\build_Bat.bat
       #run: powershell.exe -Command " .\build_Bat.bat"
