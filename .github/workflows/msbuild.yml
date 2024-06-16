@@ -22,7 +22,7 @@ jobs:
       run: chmod -R +x .\main .\include .\Compiler
 
     - name: run
-      run: ..\Compiler\bin\make.exe clear
+      run: ..\Compiler\bin\make.exe
       working-directory: .\main
 
     - name: run powershell and build
