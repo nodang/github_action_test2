@@ -23,7 +23,13 @@ jobs:
 
     - name: move
       run: cd main
-    
+
+    - name: check
+      run: pwd
+      
     - name: run powershell and build
       run: powershell .\build_Bat.bat
       #run: powershell.exe -Command " .\build_Bat.bat"
+
+    - name: check
+      run: pwd
