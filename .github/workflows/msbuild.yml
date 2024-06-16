@@ -19,7 +19,6 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: build
-      shell: powershell
       run: |
         cd main
         .\build_Bat.bat
