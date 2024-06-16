@@ -17,8 +17,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    
     - name: permission
       run: chmod -R +x .\main .\include .\Compiler
+    
     - name: run powershell and build
-      run: powershell.exe -command "(cd main) -and (.\build_Bat.bat)"
+      shell: pwsh
+      run: |
+        cd main
+        .\build_Bat.bat
       #run: powershell.exe -Command " .\build_Bat.bat"
