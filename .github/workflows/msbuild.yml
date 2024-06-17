@@ -34,8 +34,8 @@ jobs:
     - name: zip release files
       uses: actions/upload-artifact@v3
       with:
-        name: c28x-artifact
-        path: ./release
+        name: c28x-build
+        path: ./build
 
 #    - name: build
 #      run: ./build_Bat.bat

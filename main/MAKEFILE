@@ -67,6 +67,10 @@ LNK_OPT = -c -farheap0x700 -heap0x01 -o$(TARGET).out -m$(TARGET).map $(OBJS) $(C
 
 # Default target.
 all: $(TARGET).out
+	mkdir build
+	mv *.out ../build
+	mv *.map ../build
+	mv *.hex ../build
 
 # Target: clean project.
 clean: 
