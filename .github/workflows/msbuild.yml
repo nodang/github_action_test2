@@ -31,6 +31,12 @@ jobs:
       env:
         TARGET_BAT: a_hara
 
+    - name: zip release files
+      uses: actions/upload-artifact@v3
+      with:
+        name: c28x-artifact
+        path: ./release
+
 #    - name: build
 #      run: ./build_Bat.bat
 #      shell: bash
