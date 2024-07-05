@@ -34,7 +34,7 @@ jobs:
         TARGET_BAT: a_hara
 
     - name: zip release files
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: c28x-build
         path: ./build
