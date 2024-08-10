@@ -38,7 +38,7 @@ ASM     = $(PROG_DIR)\asm2000.exe
 LNK     = $(PROG_DIR)\lnk2000.exe
 else
 INCLUDE = $(PATH)/include
-PROG_DIR = $(PATH)/Compiler\bin
+PROG_DIR = $(PATH)/Compiler/bin
 CC      = $(PROG_DIR)/cl2000.exe
 ASM     = $(PROG_DIR)/asm2000.exe
 LNK     = $(PROG_DIR)/lnk2000.exe
