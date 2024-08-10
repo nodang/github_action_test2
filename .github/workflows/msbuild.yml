@@ -23,8 +23,7 @@ jobs:
     - name: submodule update
       run: |
         git submodule update --recursive
-        cd Compiler
-        ls
+        ls Compiler
       shell: bash
     
     - name: permission
