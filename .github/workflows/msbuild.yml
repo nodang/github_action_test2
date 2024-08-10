@@ -18,15 +18,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ssh-key: ${{ secrets.SSH_KEY }}
-
-    - name: submodule update
-      run: |
-        git submodule update --recursive
-        ls Compiler
-        ll compiler
-        tree
-      shell: bash
+        token: ${{ secrets.ACTION_TOKEN }}
+        submodules: true
     
     - name: permission
       run: chmod -R +x ./main ./include ./Compiler
