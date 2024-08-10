@@ -20,10 +20,11 @@ jobs:
     
     - name: permission
       run: chmod -R +x .\\main .\\include .\\Compiler
-      shell: PowerShell
+      shell: bash
 
     - name: build
       run: |
+        git submodule update --init --recursive
         ..\\Compiler\\bin\\make
         ..\\Compiler\\bin\\hex2000 $TARGET_BAT.out -o $TARGET_BAT.hex -map $TARGET_BAT.map -i -datawidth 16 -memwidth 16 -romwidth 16
         mkdir ..\\build
