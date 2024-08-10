@@ -18,12 +18,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        submodule: true
         ssh-key: ${{ secrets.SSH_KEY }}
 
     - name: submodule update
       run: |
-        auth_header="$(git config --local --get http.https://github.com/.extraheader)"
         git submodule update --init --recursive
       shell: bash
     
