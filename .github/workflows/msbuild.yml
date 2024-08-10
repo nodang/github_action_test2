@@ -20,7 +20,7 @@ jobs:
     
     - name: permission
       run: chmod -R +x .\\main .\\include .\\Compiler
-      shell: bash
+      shell: PowerShell
 
     - name: build
       run: |
