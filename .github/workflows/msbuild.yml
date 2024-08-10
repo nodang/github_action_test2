@@ -29,7 +29,7 @@ jobs:
         mkdir ..\build
         mv *.out *.map *.hex ..\build
       shell: bash
-      working-directory: ~/main
+      working-directory: cd ~/main
       env:
         TARGET_BAT: a_hara
 
