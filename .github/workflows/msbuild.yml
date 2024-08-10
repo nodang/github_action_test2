@@ -22,7 +22,7 @@ jobs:
 
     - name: submodule update
       run: |
-        git submodule update --init --recursive
+        git submodule update --recursive
       shell: bash
     
     - name: permission
