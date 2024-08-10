@@ -19,18 +19,18 @@ jobs:
     - uses: actions/checkout@v4
     
     - name: permission
-      run: chmod -R +x .\\main .\\include .\\Compiler
+      run: chmod -R +x ./main ./include ./Compiler
       shell: bash
 
     - name: build
       run: |
         git submodule update --init --recursive
-        ..\\Compiler\\bin\\make
-        ..\\Compiler\\bin\\hex2000 $TARGET_BAT.out -o $TARGET_BAT.hex -map $TARGET_BAT.map -i -datawidth 16 -memwidth 16 -romwidth 16
-        mkdir ..\\build
-        mv *.out *.map *.hex ..\\build
+        ../Compiler/bin/make
+        ../Compiler/bin/hex2000 $TARGET_BAT.out -o $TARGET_BAT.hex -map $TARGET_BAT.map -i -datawidth 16 -memwidth 16 -romwidth 16
+        mkdir ../build
+        mv *.out *.map *.hex ../build
       shell: bash
-      working-directory: main\
+      working-directory: main/
       env:
         TARGET_BAT: a_hara
 
@@ -38,7 +38,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: c28x-build
-        path: build\
+        path: build/
 
 #    - name: build
 #      run: ./build_Bat.bat
