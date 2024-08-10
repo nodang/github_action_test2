@@ -12,6 +12,7 @@
 
 set PATH_BAT=..\Compiler
 set TARGET_BAT=a_hara
+set AUTO_BUILD_ENABLE=NO
 
 cls
 
