@@ -1,0 +1,3 @@
+[submodule "Compiler1"]
+	path = Compiler1
+	url = https://github.com/nodang/c28x_complier
